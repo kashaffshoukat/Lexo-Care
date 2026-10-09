@@ -333,7 +333,7 @@
 /* GLOBAL LEXO CARE PROFESSIONAL TYPOGRAPHY STYLING */
 body {
     font-family: 'Montserrat', 'Inter', system-ui, -apple-system, sans-serif;
-    color: #243247;
+    color: #0B192C;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -343,7 +343,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', 'Oswald', sans-serif;
     letter-spacing: -0.025em;
-    color: #243247;
+    color: #0B192C;
 }
 
 /* Paragraphs & Text Styling */
@@ -361,99 +361,22 @@ a {
 </head>
 <body class="min-h-screen flex flex-col justify-between relative select-none">
 
-    <!-- HERO MAIN CONTAINER WITH DUAL BACKGROUND LAYERS -->
-    <div id="hero-section" class="relative min-h-screen w-full flex flex-col justify-between overflow-hidden">
+    <!-- HERO MAIN CONTAINER - SINGLE SCREEN FIT -->
+<div id="hero-section" class="relative h-screen w-full flex flex-col justify-between overflow-hidden bg-slate-900 py-3">
         
-        <!-- Background Layer 1 -->
-        <div id="bg-layer-1" class="bg-layer opacity-100" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.85) 100%), url('e.jpg');"></div>
-        
-        <!-- Background Layer 2 -->
-        <div id="bg-layer-2" class="bg-layer opacity-0" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.85) 100%), url('');"></div>
+    <!-- Background Layer 1 -->
+    <div id="bg-layer-1" class="bg-layer opacity-100" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.85) 100%), url('e.jpg');"></div>
 
-        <!-- TOP NAVIGATION BAR -->
-        <header class="w-full px-4 sm:px-8 lg:px-16 py-5 sm:py-6 flex items-center justify-between z-20 nav-shadow">
-            
-            <!-- Left Side: Menu Overlay Toggle -->
-            <div class="flex items-center space-x-6 lg:space-x-8">
-               <button id="menu-toggle-btn" onclick="toggleFullscreenMenu()" class="flex items-center space-x-2 text-white hover:text-lexoCyan focus:outline-none transition-colors" aria-label="Open Menu">
-    <i class="fa-solid fa-bars text-lg"></i>
-</button>
-            </div>
+    <!-- TOP NAVIGATION BAR -->
+    <header class="w-full px-4 sm:px-8 lg:px-16 py-2 flex items-center justify-between z-20 nav-shadow">
+        <div class="flex items-center space-x-6">
+           <button id="menu-toggle-btn" class="flex items-center space-x-2 text-white hover:text-lexoCyan focus:outline-none transition-colors cursor-pointer" aria-label="Open Menu">
+               <i class="fa-solid fa-bars text-lg"></i>
+           </button>
+        </div>
 
-            <!-- Center: BBC Earth Style Perfectly Centered Logo -->
-            <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center cursor-pointer hover:opacity-90 transition-opacity" onclick="selectScreen(0)">
-                <div class="lexo-care-logo-wrapper" role="img" aria-label="LEXO CARE Logo">
-                    <div class="lexo-row">
-                        <span class="lexo-cyan">LE</span>
-                        <div class="lexo-x">
-                            <div class="lexo-bar-black"></div>
-                            <div class="lexo-bar-cyan"></div>
-                        </div>
-                        <span class="lexo-cyan">O</span>
-                    </div>
-                    <div class="care-row">
-                        <span>C</span><span>A</span><span>R</span><span>E</span>
-                    </div>
-                </div>
-            </div>
-
-           
-
-        </header>
-
-       <!-- CENTER HERO TITLE SECTION -->
-      <!-- CENTER HERO TITLE SECTION WITH PARAGRAPH, SOCIAL LINKS & BOOKING BUTTON -->
-        <main id="overview" class="w-full flex-grow flex flex-col items-center justify-center text-center px-4 py-12 z-10 my-auto">
-            <div id="hero-content" class="animate-fade-in flex flex-col items-center w-full max-w-4xl mx-auto">
-                <!-- Subtitle -->
-                <p id="sub-title" class="text-[10px] sm:text-xs md:text-sm font-semibold tracking-[0.3em] sm:tracking-[0.4em] text-white uppercase mb-3 px-2 drop-shadow-md">
-                    P R O F E S S I O N A L &nbsp; C A R E &nbsp; S O L U T I O N S
-                </p>
-                
-                <!-- Main Screen Title -->
-                <h1 id="main-title" class="hero-title uppercase tracking-wider my-2">
-                    LEXO CARE 
-                </h1>
-
-                <!-- Small Descriptive Paragraph -->
-                <p class="text-gray-200 text-xs sm:text-sm md:text-base max-w-2xl leading-relaxed mt-4 mb-6 font-light drop-shadow">
-                    Qatar’s premier provider for professional cleaning, disinfection, pest control, and hospitality support. Tailored to residential and commercial excellence.
-                </p>
-
-                <!-- 4 Sleek Circular Social Links -->
-                <div class="flex items-center justify-center gap-3 mb-8">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-full border border-white/30 bg-white/10 flex items-center justify-center text-white hover:bg-[#00b4f0] hover:border-[#00b4f0] hover:text-[#0b0c10] transition-all duration-300 shadow-md backdrop-blur-sm" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin-in text-xs"></i>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-full border border-white/30 bg-white/10 flex items-center justify-center text-white hover:bg-[#00b4f0] hover:border-[#00b4f0] hover:text-[#0b0c10] transition-all duration-300 shadow-md backdrop-blur-sm" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram text-xs"></i>
-                    </a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-full border border-white/30 bg-white/10 flex items-center justify-center text-white hover:bg-[#00b4f0] hover:border-[#00b4f0] hover:text-[#0b0c10] transition-all duration-300 shadow-md backdrop-blur-sm" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook-f text-xs"></i>
-                    </a>
-                    <a href="https://whatsapp.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-full border border-white/30 bg-white/10 flex items-center justify-center text-white hover:bg-[#00b4f0] hover:border-[#00b4f0] hover:text-[#0b0c10] transition-all duration-300 shadow-md backdrop-blur-sm" aria-label="WhatsApp">
-                        <i class="fa-brands fa-whatsapp text-xs"></i>
-                    </a>
-                </div>
-
-                <!-- Sleek Booking Button -->
-                <div>
-                    <a href="#contact-booking" class="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-[#00b4f0] hover:bg-white text-[#0b0c10] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 shadow-xl hover:-translate-y-0.5">
-                        <span>Book Your Slot</span>
-                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    </a>
-                </div>
-
-            </div>
-        </main>
-    </div>
-
-    <!-- EXACT BBC EARTH STYLE FULLSCREEN MENU OVERLAY -->
-    <div id="fullscreen-menu" class="fixed inset-0 bg-[#0b0c10]/95 backdrop-blur-md z-50 flex flex-col justify-between p-6 sm:p-12 opacity-0 pointer-events-none">
-        
-        <!-- Overlay Header -->
-        <div class="flex items-center justify-between w-full">
-            <div class="lexo-care-logo-wrapper" onclick="toggleFullscreenMenu()">
+        <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center cursor-pointer hover:opacity-95 transition-opacity scale-90 sm:scale-100">
+            <div class="lexo-care-logo-wrapper" role="img" aria-label="LEXO CARE Logo">
                 <div class="lexo-row">
                     <span class="lexo-cyan">LE</span>
                     <div class="lexo-x">
@@ -466,53 +389,112 @@ a {
                     <span>C</span><span>A</span><span>R</span><span>E</span>
                 </div>
             </div>
-
-            <button id="close-menu-btn" onclick="toggleFullscreenMenu()" class="text-white text-2xl sm:text-3xl hover:text-lexoCyan focus:outline-none transition-transform hover:scale-110 p-2" aria-label="Close Menu">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
         </div>
+    </header>
 
-        <!-- Overlay Centered Content with exact 4 Company Nav Links -->
-        <div class="flex flex-col items-center justify-center my-auto text-center space-y-6">
+    <!-- CENTER HERO CONTENT (COMPACT FOR SINGLE SCREEN FIT) -->
+    <main id="overview" class="w-full flex-grow flex flex-col items-center justify-center text-center px-4 z-10 my-auto">
+        <div class="flex flex-col items-center w-full max-w-4xl mx-auto">
+            <p class="text-[9px] sm:text-xs font-semibold tracking-[0.3em] sm:tracking-[0.4em] text-white uppercase mb-1 px-2 drop-shadow-md">
+                P R O F E S S I O N A L &nbsp; C A R E &nbsp; S O L U T I O N S
+            </p>
             
-            <!-- Top Heading / Main Link -->
-               <a href="#client-experience" onclick="toggleFullscreenMenu()" class="text-white py-1">How Do We Work?</a>
+            <h1 class="hero-title uppercase tracking-wider my-1 text-3xl sm:text-6xl font-black text-white">
+                LEXO CARE 
+            </h1>
 
-
-            <!-- Sub Heading / Second Link -->
-                    <a href="#contact-booking" onclick="toggleFullscreenMenu()" class="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-[#00b4f0] hover:bg-white text-[#0b0c10] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 shadow-xl hover:-translate-y-0.5">
-                        <span>Book Your Slot</span>
-                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    </a>
-
-            <!-- Section Subtitle -->
-            <p class="text-[10px] sm:text-xs text-white/50 tracking-[0.35em] uppercase pt-2">
-                CORPORATE DIRECTORY
+            <p class="text-gray-200 text-[11px] sm:text-sm max-w-xl leading-snug mt-1 mb-3 font-light drop-shadow px-2">
+                Qatar’s premier provider for professional cleaning, disinfection, pest control, and hospitality support.
             </p>
 
-            <!-- Two-Column Grid for Your 4 Links -->
-            <!-- Two-Column Grid for Your 4 Links with Proper Section IDs -->
-<div class="grid grid-cols-2 gap-x-12 sm:gap-x-24 gap-y-4 sm:gap-y-5 text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase text-white/90 pt-3">
-    <a href="#overview" onclick="toggleFullscreenMenu()" class="hover:text-lexoCyan transition-colors py-1">OVERVIEWS</a>
-    <a href="#about-us" onclick="toggleFullscreenMenu()" class="hover:text-lexoCyan transition-colors py-1">About US</a>
-    <a href="#our-services" onclick="toggleFullscreenMenu()" class="hover:text-lexoCyan transition-colors py-1">OUR Services</a>
-    <a href="#industries" onclick="toggleFullscreenMenu()" class="hover:text-lexoCyan transition-colors py-1">Why Choose US</a>
-</div>
-
-        </div>
-
-        <!-- Overlay Footer with Social Icons -->
-        <div class="flex flex-col sm:flex-row items-center justify-between w-full pt-6 border-t border-white/10 text-xs text-white/60 space-y-4 sm:space-y-0">
-            <span>LEXO CARE FOR CLEANING AND HOSPITALITY</span>
-            <div class="flex items-center space-x-4 text-white text-base">
-                <a href="https://twitter.com" target="_blank" rel="noopener" class="w-7 h-7 rounded-full flex items-center justify-center hover:text-lexoCyan transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank" rel="noopener" class="w-7 h-7 rounded-full flex items-center justify-center hover:text-lexoCyan transition-colors"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://whatsapp.com" target="_blank" rel="noopener" class="w-7 h-7 rounded-full flex items-center justify-center hover:text-lexoCyan transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="tel:+97400000000" class="w-7 h-7 rounded-full flex items-center justify-center hover:text-lexoCyan transition-colors"><i class="fa-solid fa-phone"></i></a>
-                <a href="https://facebook.com" target="_blank" rel="noopener" class="w-7 h-7 rounded-full flex items-center justify-center hover:text-lexoCyan transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+            <!-- Social Links -->
+            <div class="flex items-center justify-center gap-2.5 mb-3">
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/30 bg-white/10 flex items-center justify-center text-white hover:bg-[#00b4f0] transition shadow-md"><i class="fa-brands fa-linkedin-in text-[10px]"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/30 bg-white/10 flex items-center justify-center text-white hover:bg-[#00b4f0] transition shadow-md"><i class="fa-brands fa-instagram text-[10px]"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/30 bg-white/10 flex items-center justify-center text-white hover:bg-[#00b4f0] transition shadow-md"><i class="fa-brands fa-facebook-f text-[10px]"></i></a>
+                <a href="https://whatsapp.com" target="_blank" rel="noopener" class="w-8 h-8 rounded-full border border-white/30 bg-white/10 flex items-center justify-center text-white hover:bg-[#00b4f0] transition shadow-md"><i class="fa-brands fa-whatsapp text-[10px]"></i></a>
             </div>
+
+            <!-- Booking Button & 3 Full-Size Elegant Images Row -->
+<div class="flex flex-col items-center w-full max-w-xl mx-auto px-4 mt-1">
+    <!-- Book Slot Button -->
+    <a href="#contact-booking" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#00b4f0] hover:bg-white hover:text-slate-900 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-xl mb-3">
+        <span>Book Slot</span>
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+    </a>
+<br>
+    <!-- 3 Large Full-Cover Images Grid -->
+    <div class="grid grid-cols-3 gap-3 w-full">
+        <div class="432 sm:h-48 rounded-2xl overflow-hidden border-2 border-white/60 shadow-2xl relative group bg-slate-800">
+            <img src="e.jpg" alt="Cleaning Service" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        </div>
+        <div class="432 sm:h-48 rounded-2xl overflow-hidden border-2 border-white/60 shadow-2xl relative group bg-slate-800">
+            <img src="e.jpg" alt="Facility Management" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        </div>
+        <div class="432 sm:h-48 rounded-2xl overflow-hidden border-2 border-white/60 shadow-2xl relative group bg-slate-800">
+            <img src="e.jpg" alt="Hospitality Support" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
         </div>
     </div>
+</div>
+        </div>
+    </main>
+</div>
+
+<!-- FULLSCREEN MENU OVERLAY -->
+<div id="fullscreen-menu" class="fixed inset-0 bg-[#0b0c10]/98 backdrop-blur-md z-50 flex flex-col justify-between p-6 sm:p-12 opacity-0 pointer-events-none">
+    
+    <!-- Overlay Header -->
+    <div class="flex items-center justify-between w-full">
+        <div class="lexo-care-logo-wrapper scale-90 sm:scale-100">
+            <div class="lexo-row">
+                <span class="lexo-cyan">LE</span>
+                <div class="lexo-x">
+                    <div class="lexo-bar-black"></div>
+                    <div class="lexo-bar-cyan"></div>
+                </div>
+                <span class="lexo-cyan">O</span>
+            </div>
+            <div class="care-row">
+                <span>C</span><span>A</span><span>R</span><span>E</span>
+            </div>
+        </div>
+
+        <button id="close-menu-btn" class="text-white text-2xl sm:text-3xl hover:text-lexoCyan focus:outline-none transition-transform hover:scale-110 p-2 cursor-pointer" aria-label="Close Menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <!-- Overlay Navigation Links (Optimized for Mobile & Desktop) -->
+    <div class="flex flex-col items-center justify-center my-auto text-center space-y-4 sm:space-y-6 w-full max-w-lg mx-auto">
+        <a href="#client-experience" class="menu-nav-link text-white text-sm sm:text-lg font-bold tracking-widest uppercase py-1 hover:text-[#00b4f0] transition-colors">How Do We Work?</a>
+        
+        <p class="text-[9px] sm:text-xs text-white/50 tracking-[0.35em] uppercase pt-2">
+            CORPORATE DIRECTORY
+        </p>
+
+        <div class="grid grid-cols-2 gap-x-8 sm:gap-x-16 gap-y-3 sm:gap-y-4 text-[11px] sm:text-sm font-semibold tracking-[0.2em] uppercase text-white/95 pt-1 w-full">
+            <a href="#overview" class="menu-nav-link hover:text-[#00b4f0] transition-colors py-1">Overview</a>
+            <a href="#about-us" class="menu-nav-link hover:text-[#00b4f0] transition-colors py-1">About Us</a>
+            <a href="#our-services" class="menu-nav-link hover:text-[#00b4f0] transition-colors py-1">Our Services</a>
+            <a href="#why-choose-lexo" class="menu-nav-link hover:text-[#00b4f0] transition-colors py-1">Why Choose Us</a>
+            <a href="#industries" class="menu-nav-link hover:text-[#00b4f0] transition-colors py-1">Industries</a>
+            <a href="#contact-booking" class="menu-nav-link hover:text-[#00b4f0] transition-colors py-1">Book Slot</a>
+        </div>
+    </div>
+
+    <!-- Overlay Footer -->
+    <div class="flex flex-col sm:flex-row items-center justify-between w-full pt-4 sm:pt-6 border-t border-white/10 text-[10px] sm:text-xs text-white/60 space-y-3 sm:space-y-0">
+        <span class="text-center sm:text-left">LEXO CARE FOR CLEANING AND HOSPITALITY W.L.L.</span>
+        <div class="flex items-center space-x-4 text-white text-base">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="w-7 h-7 rounded-full flex items-center justify-center hover:text-lexoCyan transition-colors"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener" class="w-7 h-7 rounded-full flex items-center justify-center hover:text-lexoCyan transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="w-7 h-7 rounded-full flex items-center justify-center hover:text-lexoCyan transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </div>
+</div>
 
     <!-- GENERAL INFORMATION MODAL -->
     <div id="info-modal" class="fixed inset-0 bg-black/85 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
@@ -528,7 +510,7 @@ a {
         </div>
     </div>
 <!-- LEXO CARE ABOUT US SECTION - OPTIMIZED WITH METRICS / BADGES TO FILL SPACE -->
-<section id="about-us" onclick="toggleFullscreenMenu()" class="max-h-[900px] w-full bg-[#F1F7FC] text-[#243247] font-sans relative overflow-hidden flex items-center justify-center py-6">
+<section id="about-us" id="menu-toggle-btn" class="max-h-[1110px] w-full bg-[#F1F7FC] text-[#0B192C] font-sans relative overflow-hidden flex items-center justify-center py-14 lg:py-18">
   <!-- Dher saare animated bubbles ka block -->
 <!-- Bottom-to-Top Water Bubbles Background -->
 <div class="lexo-bubble-bg">
@@ -558,16 +540,16 @@ a {
 </div>
 
   <!-- Geometric Bauhaus Background Accent Lines -->
-  <div class="absolute top-0 right-0 w-80 h-80 bg-[#243247]/5 rounded-bl-full pointer-events-none z-0"></div>
-  <div class="absolute bottom-0 left-0 w-56 h-56 border-2 border-[#243247]/10 rounded-tr-full pointer-events-none z-0"></div>
+  <div class="absolute top-0 right-0 w-80 h-80 bg-[#0B192C]/5 rounded-bl-full pointer-events-none z-0"></div>
+  <div class="absolute bottom-0 left-0 w-56 h-56 border-2 border-[#0B192C]/10 rounded-tr-full pointer-events-none z-0"></div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-center h-full">
     
   <div class="mb-10">
      
       <div class="inline-flex items-center gap-2 mb-1">
-        <span class="w-8 h-1 bg-[#243247]"></span>
-        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#243247]">Why Choose</span>
+        <span class="w-8 h-1 bg-[#0B192C]"></span>
+        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#0B192C]">About</span>
       </div>
        <div class="lexo-care-logo-wrapper" role="img" aria-label="LEXO CARE Logo">
 
@@ -760,7 +742,7 @@ a {
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 items-stretch">
       
       <!-- Left Hero Block (Solid Navy Statement Box) -->
-      <div class="lg:col-span-5 bg-[#243247] text-white p-5 sm:p-7 flex flex-col justify-between shadow-2xl relative overflow-hidden transform transition-all duration-500 hover:scale-[1.01]">
+      <div class="lg:col-span-5 bg-[#0B192C] text-white p-5 sm:p-7 flex flex-col justify-between shadow-2xl relative overflow-hidden transform transition-all duration-500 hover:scale-[1.01]">
         <!-- Decorative geometric corner accent -->
         <div class="absolute -bottom-16 -right-16 w-40 h-40 bg-[#5A8AB3]/30 rounded-full blur-2xl"></div>
         
@@ -810,21 +792,21 @@ a {
       <!-- Right Image Block (Bauhaus Frame Contrast with Navy & White) -->
       <div class="lg:col-span-7 relative flex items-center">
         <!-- Outer contrasting Bauhaus geometric frame accent -->
-        <div class="absolute -inset-1.5 bg-gradient-to-br from-[#243247] to-[#5A8AB3] rounded-none shadow-xl transform rotate-1 scale-[1.01] pointer-events-none opacity-90"></div>
+        <div class="absolute -inset-1.5 bg-gradient-to-br from-[#0B192C] to-[#5A8AB3] rounded-none shadow-xl transform rotate-1 scale-[1.01] pointer-events-none opacity-90"></div>
         <div class="absolute inset-0 border-2 border-white pointer-events-none z-20"></div>
 
         <!-- Main Image Container -->
-        <div class="relative w-full h-[280px] sm:h-[340px] lg:h-[380px] bg-[#243247] overflow-hidden z-10 shadow-2xl flex items-center justify-center">
+        <div class="relative w-full h-[280px] sm:h-[340px] lg:h-[380px] bg-[#0B192C] overflow-hidden z-10 shadow-2xl flex items-center justify-center">
           <img 
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop" 
+            src="e.jpg" 
             alt="Professional cleaning and facility services by Lexo Care" 
             class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 opacity-90"
           />
           <!-- Subtle Dark Gradient Overlay for dramatic contrast -->
-          <div class="absolute inset-0 bg-gradient-to-t from-[#243247]/80 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0B192C]/80 via-transparent to-transparent pointer-events-none"></div>
           
           <!-- Floating Badge tag -->
-          <div class="absolute bottom-4 left-4 bg-[#243247] text-white px-4 py-2 border border-white/20 shadow-lg z-30">
+          <div class="absolute bottom-4 left-4 bg-[#0B192C] text-white px-4 py-2 border border-white/20 shadow-lg z-30">
             <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#00b4f0]">Professional Standards</p>
             <p class="text-xs font-medium text-white">Trusted Facility & Home Care</p>
           </div>
@@ -925,7 +907,7 @@ a {
 </style>
 
 <!-- LEXO CARE SERVICES SECTION - SINGLE SCREEN, ANIMATED BUBBLES & DOUBLE TICKS -->
-<section id="our-services" onclick="toggleFullscreenMenu()" class="lexo-services-container max-h-[1420px] w-full bg-[#F1F7FC] text-[#243247] font-sans relative overflow-hidden flex items-center justify-center py-4">
+<section id="our-services" id="menu-toggle-btn" class="lexo-services-container max-h-[1620px] w-full bg-[#F1F7FC] text-[#0B192C] font-sans relative overflow-hidden flex items-center justify-center py-14 lg:py-18">
   
   <!-- Bottom-to-Top Water Bubbles Background -->
 <div class="lexo-bubble-bg">
@@ -942,17 +924,17 @@ a {
 </div>
 
   <!-- Sleek Bauhaus Background Grid Lines & Accents -->
-  <div class="absolute inset-0 bg-[linear-gradient(to_right,#24324708_1px,transparent_1px),linear-gradient(to_bottom,#24324708_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none z-0"></div>
-  <div class="absolute top-0 right-0 w-80 h-80 bg-[#243247]/5 rounded-bl-full pointer-events-none z-0"></div>
-  <div class="absolute bottom-0 left-0 w-64 h-64 border-2 border-[#243247]/10 rounded-tr-full pointer-events-none z-0"></div>
+  
+  <div class="absolute top-0 right-0 w-80 h-80 bg-[#0B192C]/5 rounded-bl-full pointer-events-none z-0"></div>
+  <div class="absolute bottom-0 left-0 w-64 h-64 border-2 border-[#0B192C]/10 rounded-tr-full pointer-events-none z-0"></div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-center h-full">
       
      <div class="mb-10">
      
       <div class="inline-flex items-center gap-2 mb-1">
-        <span class="w-8 h-1 bg-[#243247]"></span>
-        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#243247]">Services at </span>
+        <span class="w-8 h-1 bg-[#0B192C]"></span>
+        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#0B192C]">Services at </span>
       </div>
        <div class="lexo-care-logo-wrapper" role="img" aria-label="LEXO CARE Logo">
 
@@ -1153,7 +1135,7 @@ a {
                        alt="General Cleaning" 
                        class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
                   <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
-                  <div class="absolute top-3 left-3 bg-[#243247]/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 text-[10px] font-semibold text-white flex items-center space-x-1.5 shadow-md">
+                  <div class="absolute top-3 left-3 bg-[#0B192C]/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 text-[10px] font-semibold text-white flex items-center space-x-1.5 shadow-md">
                       <i class="fa-solid fa-broom text-[#00b4f0]"></i>
                       <span>Area A</span>
                   </div>
@@ -1162,7 +1144,7 @@ a {
               <!-- Card Body Content -->
               <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between bg-white">
                   <div>
-                      <h3 class="text-lg sm:text-xl font-bold text-[#243247] mb-2 group-hover:text-[#00b4f0] transition-colors">
+                      <h3 class="text-lg sm:text-xl font-bold text-[#0B192C] mb-2 group-hover:text-[#00b4f0] transition-colors">
                           General Cleaning Activities
                       </h3>
                       <p class="text-slate-600 text-xs leading-relaxed mb-4">
@@ -1182,10 +1164,12 @@ a {
                          
                       </div>
                   </div>
- <a href="#contact-booking" onclick="toggleFullscreenMenu()" class="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-[#00b4f0] hover:bg-white text-[#0b0c10] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 shadow-xl hover:-translate-y-0.5">
-                        <span>Book Your Slot</span>
-                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    </a>
+<div class="pt-4 border-t border-slate-100 flex justify-start">
+            <a href="#contact-booking" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#00b4f0] hover:bg-[#243247] text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md">
+                <span>Book Slot</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+        </div>
               </div>
           </div>
 
@@ -1198,7 +1182,7 @@ a {
                        alt="Disinfection & Pest Control" 
                        class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
                   <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent"></div>
-                  <div class="absolute top-3 left-3 bg-[#243247]/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 text-[10px] font-semibold text-white flex items-center space-x-1.5 shadow-md">
+                  <div class="absolute top-3 left-3 bg-[#0B192C]/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 text-[10px] font-semibold text-white flex items-center space-x-1.5 shadow-md">
                       <i class="fa-solid fa-shield-halved text-[#00b4f0]"></i>
                       <span>Area B</span>
                   </div>
@@ -1207,7 +1191,7 @@ a {
               <!-- Card Body Content -->
               <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between bg-white">
                   <div>
-                      <h3 class="text-lg sm:text-xl font-bold text-[#243247] mb-2 group-hover:text-[#00b4f0] transition-colors">
+                      <h3 class="text-lg sm:text-xl font-bold text-[#0B192C] mb-2 group-hover:text-[#00b4f0] transition-colors">
                           Disinfection & Pest Control
                       </h3>
                       <p class="text-slate-600 text-xs leading-relaxed mb-4">
@@ -1227,10 +1211,12 @@ a {
                       </div>
                   </div>
 
-                 <a href="#contact-booking" onclick="toggleFullscreenMenu()" class="inline-flex items-center gap-2.5 px-7 py-3 rounded-full bg-[#00b4f0] hover:bg-white text-[#0b0c10] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 shadow-xl hover:-translate-y-0.5">
-                        <span>Book Your Slot</span>
-                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    </a>
+              <div class="pt-4 border-t border-slate-100 flex justify-start">
+            <a href="#contact-booking" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#00b4f0] hover:bg-[#243247] text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md">
+                <span>Book Slot</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+        </div>
               </div>
           </div>
 
@@ -1243,7 +1229,7 @@ a {
                        alt="Hospitality Services" 
                        class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
                   <div class="absolute inset-0 bg-gradient-to-t from-white via-navy/20 to-transparent"></div>
-                  <div class="absolute top-3 left-3 bg-[#243247]/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 text-[10px] font-semibold text-white flex items-center space-x-1.5 shadow-md">
+                  <div class="absolute top-3 left-3 bg-[#0B192C]/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 text-[10px] font-semibold text-white flex items-center space-x-1.5 shadow-md">
                       <i class="fa-solid fa-bell-concierge text-[#00b4f0]"></i>
                       <span>Area C</span>
                   </div>
@@ -1252,7 +1238,7 @@ a {
               <!-- Card Body Content -->
               <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between bg-white">
                   <div>
-                      <h3 class="text-lg sm:text-xl font-bold text-[#243247] mb-2 group-hover:text-[#00b4f0] transition-colors">
+                      <h3 class="text-lg sm:text-xl font-bold text-[#0B192C] mb-2 group-hover:text-[#00b4f0] transition-colors">
                           Hospitality Services
                       </h3>
                       <p class="text-slate-600 text-xs leading-relaxed mb-4">
@@ -1272,10 +1258,12 @@ a {
                       </div>
                   </div>
 
-                <a href="#contact-booking" onclick="toggleFullscreenMenu()" class="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#00b4f0] hover:bg-white text-[#0b0c10] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 shadow-xl hover:-translate-y-0.5">
-                        <span>Book Your Slot</span>
-                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    </a>
+                <div class="pt-4 border-t border-slate-100 flex justify-start">
+            <a href="#contact-booking" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#00b4f0] hover:bg-[#243247] text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-md">
+                <span>Book Slot</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+        </div>
               </div>
           </div>
 
@@ -1350,7 +1338,7 @@ a {
         <p class="text-xs text-slate-300">Our team will reach out to you shortly.</p>
     </div>
 </div><!-- LEXO CARE CONTACT & BOOKING SECTION - MAP ON LEFT, DYNAMIC SERVICES FORM ON RIGHT -->
-<section id="contact-booking" class="max-h-[1840px] w-full bg-[#F1F7FC] text-[#243247] font-sans relative overflow-hidden flex items-center justify-center py-12">
+<section id="contact-booking" class="max-h-[1840px] w-full bg-[#F1F7FC] text-[#0B192C] font-sans relative overflow-hidden flex items-center justify-center py-14 lg:py-18">
   <!-- Liquid Glass Water Bubbles Background -->
 <div class="lexo-bubble-bg">
     <div class="liquid-bubble wb-1"></div>
@@ -1387,15 +1375,199 @@ a {
   </div>
 
   <!-- Sleek Bauhaus Background Grid Lines & Accents -->
-  <div class="absolute inset-0 bg-[linear-gradient(to_right,#24324706_1px,transparent_1px),linear-gradient(to_bottom,#24324706_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none z-0"></div>
+  
   <div class="absolute top-0 right-0 w-80 h-80 bg-[#00b4f0]/10 rounded-bl-full pointer-events-none z-0 blur-xl"></div>
-  <div class="absolute bottom-0 left-0 w-64 h-64 border-2 border-[#243247]/5 rounded-tr-full pointer-events-none z-0"></div>
+  <div class="absolute bottom-0 left-0 w-64 h-64 border-2 border-[#0B192C]/5 rounded-tr-full pointer-events-none z-0"></div>
 
   <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-center h-full">
       
       <div class="inline-flex items-center gap-2 mb-1">
-        <span class="w-8 h-1 bg-[#243247]"></span>
-        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#243247]">Book your Slot</span>
+        <span class="w-8 h-1 bg-[#0B192C]"></span>
+        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#0B192C]">Book your Slot at </span>  <div class="lexo-care-logo-wrapper" role="img" aria-label="LEXO CARE Logo">
+
+            <div class="lexo-row">
+
+                <span class="lexo-cyan">L</span>
+
+               <span class="lexo-cyan">E</span>
+
+                <div class="lexo-x">
+
+                    <div class="lexo-bar-black"></div>
+
+                    <div class="lexo-bar-cyan"></div>
+
+                </div>
+
+                <span class="lexo-cyan">O</span>
+
+            </div>
+
+            <div class="care-row">
+
+                <span>C</span><span>A</span><span>R</span><span>E</span>
+
+            </div>
+
+          </div>
+
+
+
+<style>
+
+.lexo-care-logo-wrapper {
+
+    display: inline-flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    user-select: none;
+
+    font-size: 2rem; /* Adjust this font-size to scale the entire logo easily */
+
+    line-height: 1;
+
+}
+
+
+
+.lexo-care-logo-wrapper .lexo-row {
+
+    display: flex;
+
+    align-items: center;
+
+    font-weight: 900;
+
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+    letter-spacing: -0.02em;
+
+}
+
+
+
+.lexo-care-logo-wrapper .lexo-cyan {
+
+    color: #00b4f0;
+
+}
+
+
+
+/* Intersecting X container */
+
+.lexo-care-logo-wrapper .lexo-x {
+
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 0.9em;
+
+    height: 1em;
+
+    margin: 0 -0.02em;
+
+}
+
+
+
+/* Diagonal bar of the X (changed to white for dark navy background contrast) */
+
+.lexo-care-logo-wrapper .lexo-bar-black {
+
+    position: absolute;
+
+    width: 0.22em;
+
+    height: 1.15em;
+
+    background-color: white;
+
+    transform: rotate(-34deg);
+
+    border-radius: 2px;
+
+}
+
+
+
+/* Cyan diagonal bar of the X */
+
+.lexo-care-logo-wrapper .lexo-bar-cyan {
+
+    position: absolute;
+
+    width: 0.22em;
+
+    height: 1.15em;
+
+    background-color: #00b4f0;
+
+    transform: rotate(34deg);
+
+    border-radius: 2px;
+
+}
+
+
+
+/* CARE subtitle row (changed to white so it shows clearly on navy background) */
+
+.lexo-care-logo-wrapper .care-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-top: 0.25em;
+
+    font-weight: 500;
+
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+    letter-spacing: 0.58em;
+
+    color: #ffffff;
+
+    padding-left: 0.1em;
+
+    font-size: 0.28em;
+
+}
+
+
+
+/* Optional hover polish */
+
+.lexo-care-logo-wrapper:hover .lexo-cyan {
+
+    filter: drop-shadow(0 2px 4px rgba(0, 180, 240, 0.4));
+
+}
+
+    .lexo-services-container {
+
+        font-family: 'Plus Jakarta Sans', sans-serif;
+
+    }
+
+    .lexo-card-shadow {
+
+        box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.12), 0 0 20px rgba(30, 58, 138, 0.04);
+
+    }
+
+</style>
       </div>
       <br>
       <!-- Grid Layout: Left Map & Office Info, Right Booking Form -->
@@ -1408,7 +1580,7 @@ a {
                       <span class="text-[10px] font-bold uppercase tracking-widest text-[#00b4f0]">Doha Office Location</span>
                       <span class="w-2 h-2 rounded-full bg-[#00b4f0] animate-pulse"></span>
                   </div>
-                  <h3 class="text-sm sm:text-base font-bold text-[#243247] mb-1">Hleyton Tower, Al Safliya Street</h3>
+                  <h3 class="text-sm sm:text-base font-bold text-[#0B192C] mb-1">Hleyton Tower, Al Safliya Street</h3>
                   <p class="text-[11px] text-slate-600 mb-3">Corniche, Doha, State of Qatar</p>
 
                   <!-- Responsive Embedded Google Map -->
@@ -1433,7 +1605,7 @@ a {
 
           <!-- Right Side: Booking Form Connected to Formspree -->
           <!-- NOTE: Replace YOUR_FORMSPREE_ENDPOINT with your actual Formspree form ID/URL -->
-          <div class="lg:col-span-7 lexo-card-shadow p-4 sm:p-5 rounded-2xl bg-[#243247] text-white border border-white/10 relative flex flex-col justify-between">
+          <div class="lg:col-span-7 lexo-card-shadow p-4 sm:p-5 rounded-2xl bg-[#0B192C] text-white border border-white/10 relative flex flex-col justify-between">
               <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="space-y-3">
                   
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -1477,7 +1649,7 @@ a {
                       <textarea name="message" rows="2" class="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2 text-white text-xs focus:outline-none focus:border-[#00b4f0] transition resize-none" placeholder="Mention property type, preferred timing, or specific cleaning/pest requirements..."></textarea>
                   </div>
 
-                  <button type="submit" class="w-full py-2.5 rounded-lg bg-[#00b4f0] hover:bg-[#009acf] text-[#243247] font-black text-xs tracking-wider uppercase transition-all duration-300 shadow-lg">
+                  <button type="submit" class="w-full py-2.5 rounded-lg bg-white hover:bg-[#009acf] text-[#0B192C] font-black text-xs tracking-wider uppercase transition-all duration-300 shadow-lg">
                       SUBMIT BOOKING INQUIRY
                   </button>
 
@@ -1517,7 +1689,7 @@ a {
 }
 </style>
 <!-- LEXO CARE INDUSTRIES WE SERVE - 2 CARDS PER ROW ON MOBILE, SINGLE SCREEN FIT -->
-<section id="industries" class="max-h-[1220px] w-full bg-[#243247] text-white font-sans relative overflow-hidden flex items-center justify-center py-12">
+<section id="industries" class="max-h-[1220px] w-full bg-[#0B192C] text-white font-sans relative overflow-hidden flex items-center justify-center py-14 lg:py-18">
   <style>
     /* BOTTOM TO TOP LIQUID WATER BUBBLES */
 .lexo-bubble-bg {
@@ -1609,7 +1781,7 @@ a {
     <div class="liquid-bubble wb-10"></div>
 </div>
   <!-- Sleek Bauhaus Background Grid Lines & Accents -->
-  <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none z-0"></div>
+  
   <div class="absolute top-0 right-0 w-80 h-80 bg-[#00b4f0]/10 rounded-bl-full pointer-events-none z-0 blur-xl"></div>
   <div class="absolute bottom-0 left-0 w-64 h-64 border-2 border-white/5 rounded-tr-full pointer-events-none z-0"></div>
 
@@ -1733,7 +1905,7 @@ a {
 }
 </style>
 
-<section id="operational-pillars" class="max-h-[640px] w-full bg-white text-[#243247] font-sans relative overflow-hidden flex items-center justify-center py-12">
+<section id="operational-pillars" class="max-h-[640px] w-full bg-white text-[#0B192C] font-sans relative overflow-hidden flex items-center justify-center py-14 lg:py-18">
   
  <!-- Bottom-to-Top Water Bubbles Background -->
 <div class="lexo-bubble-bg">
@@ -1750,17 +1922,17 @@ a {
 </div>
 
   <!-- Sleek Bauhaus Background Grid Lines & Accents -->
-  <div class="absolute inset-0 bg-[linear-gradient(to_right,#24324706_1px,transparent_1px),linear-gradient(to_bottom,#24324706_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none z-0"></div>
+  
   <div class="absolute top-0 right-0 w-80 h-80 bg-[#00b4f0]/10 rounded-bl-full pointer-events-none z-0 blur-xl"></div>
-  <div class="absolute bottom-0 left-0 w-64 h-64 border-2 border-[#243247]/5 rounded-tr-full pointer-events-none z-0"></div>
+  <div class="absolute bottom-0 left-0 w-64 h-64 border-2 border-[#0B192C]/5 rounded-tr-full pointer-events-none z-0"></div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-center h-full">
     
   <div class="mb-10">
      
       <div class="inline-flex items-center gap-2 mb-1">
-        <span class="w-8 h-1 bg-[#243247]"></span>
-        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#243247]">Operational Pillars of </span>
+        <span class="w-8 h-1 bg-[#0B192C]"></span>
+        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#0B192C]">Operational Pillars of </span>
       </div>
        <div class="lexo-care-logo-wrapper" role="img" aria-label="LEXO CARE Logo">
 
@@ -1957,7 +2129,7 @@ a {
           <div class="w-16 h-16 rounded-full border-2 border-dashed border-[#00b4f0] flex items-center justify-center mb-2.5 bg-[#00b4f0]/10">
             <svg class="w-7 h-7 text-[#00b4f0]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
           </div>
-          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#243247] mb-1 uppercase">Quality Assurance</h4>
+          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#0B192C] mb-1 uppercase">Quality Assurance</h4>
           <p class="text-[11px] text-slate-600 leading-relaxed">
             Rigorous inspection protocols ensure consistently high service standards across all properties.
           </p>
@@ -1965,10 +2137,10 @@ a {
 
         <!-- ITEM 2: PROFESSIONAL STAFF -->
         <div class="w-[240px] sm:w-[280px] flex flex-col items-center text-center p-3 bg-transparent whitespace-normal">
-          <div class="w-16 h-16 rounded-full border-2 border-dashed border-[#243247] flex items-center justify-center mb-2.5 bg-[#243247]/5">
-            <svg class="w-7 h-7 text-[#243247]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+          <div class="w-16 h-16 rounded-full border-2 border-dashed border-[#0B192C] flex items-center justify-center mb-2.5 bg-[#0B192C]/5">
+            <svg class="w-7 h-7 text-[#0B192C]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
           </div>
-          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#243247] mb-1 uppercase">Professional Staff</h4>
+          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#0B192C] mb-1 uppercase">Professional Staff</h4>
           <p class="text-[11px] text-slate-600 leading-relaxed">
             Trained, vetted on-site personnel delivering expert care and dependable execution.
           </p>
@@ -1979,7 +2151,7 @@ a {
           <div class="w-16 h-16 rounded-full border-2 border-dashed border-[#00b4f0] flex items-center justify-center mb-2.5 bg-[#00b4f0]/10">
             <svg class="w-7 h-7 text-[#00b4f0]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
           </div>
-          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#243247] mb-1 uppercase">Health & Safety</h4>
+          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#0B192C] mb-1 uppercase">Health & Safety</h4>
           <p class="text-[11px] text-slate-600 leading-relaxed">
             Eco-responsible disinfection and certified pest control methods safeguarding environments.
           </p>
@@ -1987,10 +2159,10 @@ a {
 
         <!-- ITEM 4: CORPORATE & B2B -->
         <div class="w-[240px] sm:w-[280px] flex flex-col items-center text-center p-3 bg-transparent whitespace-normal">
-          <div class="w-16 h-16 rounded-full border-2 border-dashed border-[#243247] flex items-center justify-center mb-2.5 bg-[#243247]/5">
-            <svg class="w-7 h-7 text-[#243247]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          <div class="w-16 h-16 rounded-full border-2 border-dashed border-[#0B192C] flex items-center justify-center mb-2.5 bg-[#0B192C]/5">
+            <svg class="w-7 h-7 text-[#0B192C]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
           </div>
-          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#243247] mb-1 uppercase">Corporate & B2B</h4>
+          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#0B192C] mb-1 uppercase">Corporate & B2B</h4>
           <p class="text-[11px] text-slate-600 leading-relaxed">
             Customized contract solutions and dedicated corporate account support for businesses.
           </p>
@@ -2001,7 +2173,7 @@ a {
           <div class="w-16 h-16 rounded-full border-2 border-dashed border-[#00b4f0] flex items-center justify-center mb-2.5 bg-[#00b4f0]/10">
             <svg class="w-7 h-7 text-[#00b4f0]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
           </div>
-          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#243247] mb-1 uppercase">Partnerships</h4>
+          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#0B192C] mb-1 uppercase">Partnerships</h4>
           <p class="text-[11px] text-slate-600 leading-relaxed">
             Collaborative service agreements built for property managers and facility operators.
           </p>
@@ -2012,17 +2184,17 @@ a {
           <div class="w-16 h-16 rounded-full border-2 border-dashed border-[#00b4f0] flex items-center justify-center mb-2.5 bg-[#00b4f0]/10">
             <svg class="w-7 h-7 text-[#00b4f0]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
           </div>
-          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#243247] mb-1 uppercase">Quality Assurance</h4>
+          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#0B192C] mb-1 uppercase">Quality Assurance</h4>
           <p class="text-[11px] text-slate-600 leading-relaxed">
             Rigorous inspection protocols ensure consistently high service standards across all properties.
           </p>
         </div>
 
         <div class="w-[240px] sm:w-[280px] flex flex-col items-center text-center p-3 bg-transparent whitespace-normal">
-          <div class="w-16 h-16 rounded-full border-2 border-dashed border-[#243247] flex items-center justify-center mb-2.5 bg-[#243247]/5">
-            <svg class="w-7 h-7 text-[#243247]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+          <div class="w-16 h-16 rounded-full border-2 border-dashed border-[#0B192C] flex items-center justify-center mb-2.5 bg-[#0B192C]/5">
+            <svg class="w-7 h-7 text-[#0B192C]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
           </div>
-          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#243247] mb-1 uppercase">Professional Staff</h4>
+          <h4 class="text-xs sm:text-sm font-black tracking-wider text-[#0B192C] mb-1 uppercase">Professional Staff</h4>
           <p class="text-[11px] text-slate-600 leading-relaxed">
             Trained, vetted on-site personnel delivering expert care and dependable execution.
           </p>
@@ -2088,26 +2260,10 @@ a {
   animation-play-state: paused;
 }
 </style>
-<section id="why-choose-lexo" onclick="toggleFullscreenMenu()" class="py-14 bg-white text-[#0B192C] font-sans relative overflow-hidden">
-  <!-- Bauhaus Geometric Background Accents -->
-   
-  <div class="absolute top-0 right-0 w-80 h-80 bg-[#0B192C]/5 rounded-bl-full pointer-events-none"></div>
-  <div class="absolute bottom-0 left-0 w-96 h-96 border-2 border-[#0B192C]/10 rounded-tr-full pointer-events-none"></div>
-
-  <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-    <!-- Bottom-to-Top Water Bubbles Background -->
-<div class="lexo-bubble-bg">
-    <div class="liquid-bubble wb-1"></div>
-    <div class="liquid-bubble wb-2"></div>
-    <div class="liquid-bubble wb-3"></div>
-    <div class="liquid-bubble wb-4"></div>
-    <div class="liquid-bubble wb-5"></div>
-    <div class="liquid-bubble wb-6"></div>
-    <div class="liquid-bubble wb-7"></div>
-    <div class="liquid-bubble wb-8"></div>
-    <div class="liquid-bubble wb-9"></div>
-    <div class="liquid-bubble wb-10"></div>
-</div><!-- Bottom-to-Top Water Bubbles Background -->
+<!-- LEXO CARE ABOUT US SECTION - OPTIMIZED WITH METRICS / BADGES TO FILL SPACE -->
+<section id="about-us" id="menu-toggle-btn" class="max-h-[1110px] w-full bg-[#F1F7FC] text-[#0B192C] font-sans relative overflow-hidden flex items-center justify-center py-14 lg:py-18">
+  <!-- Dher saare animated bubbles ka block -->
+<!-- Bottom-to-Top Water Bubbles Background -->
 <div class="lexo-bubble-bg">
     <div class="liquid-bubble wb-1"></div>
     <div class="liquid-bubble wb-2"></div>
@@ -2120,12 +2276,31 @@ a {
     <div class="liquid-bubble wb-9"></div>
     <div class="liquid-bubble wb-10"></div>
 </div>
-    <!-- Section Header -->
-    <div class="mb-10">
+<!-- Bottom-to-Top Water Bubbles Background -->
+<div class="lexo-bubble-bg">
+    <div class="liquid-bubble wb-1"></div>
+    <div class="liquid-bubble wb-2"></div>
+    <div class="liquid-bubble wb-3"></div>
+    <div class="liquid-bubble wb-4"></div>
+    <div class="liquid-bubble wb-5"></div>
+    <div class="liquid-bubble wb-6"></div>
+    <div class="liquid-bubble wb-7"></div>
+    <div class="liquid-bubble wb-8"></div>
+    <div class="liquid-bubble wb-9"></div>
+    <div class="liquid-bubble wb-10"></div>
+</div>
+
+  <!-- Geometric Bauhaus Background Accent Lines -->
+  <div class="absolute top-0 right-0 w-80 h-80 bg-[#0B192C]/5 rounded-bl-full pointer-events-none z-0"></div>
+  <div class="absolute bottom-0 left-0 w-56 h-56 border-2 border-[#0B192C]/10 rounded-tr-full pointer-events-none z-0"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-center h-full">
+    
+  <div class="mb-10">
      
       <div class="inline-flex items-center gap-2 mb-1">
-        <span class="w-8 h-1 bg-[#243247]"></span>
-        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#243247]">Why Choose</span>
+        <span class="w-8 h-1 bg-[#0B192C]"></span>
+        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#0B192C]">Why Choose</span>
       </div>
        <div class="lexo-care-logo-wrapper" role="img" aria-label="LEXO CARE Logo">
 
@@ -2314,21 +2489,380 @@ a {
 </style>
     </div>
 
-    <!-- Bauhaus Grid Layout: Text on Left, Image on Right -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-      
-      <!-- Left Content Box (Solid Navy with White & Cyan Bauhaus Accents) -->
-      <div class="lg:col-span-7 bg-[#0B192C] text-white p-8 sm:p-12 border-4 border-[#0B192C] shadow-2xl flex flex-col justify-between relative overflow-hidden">
-        <!-- Decorative geometric blur -->
-        <div class="absolute -top-16 -left-16 w-48 h-48 bg-[#00b4f0]/10 rounded-full blur-2xl"></div>
+    <!-- Bauhaus Grid Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 items-stretch">
+       <!-- Right Image Block (Bauhaus Frame Contrast with Navy & White) -->
+      <div class="lg:col-span-7 relative flex items-center">
+        <!-- Outer contrasting Bauhaus geometric frame accent -->
+        <div class="absolute -inset-1.5 bg-gradient-to-br from-[#0B192C] to-[#5A8AB3] rounded-none shadow-xl transform rotate-1 scale-[1.01] pointer-events-none opacity-90"></div>
+        <div class="absolute inset-0 border-2 border-white pointer-events-none z-20"></div>
 
+        <!-- Main Image Container -->
+        <div class="relative w-full h-[280px] sm:h-[340px] lg:h-[380px] bg-[#0B192C] overflow-hidden z-10 shadow-2xl flex items-center justify-center">
+          <img 
+            src="e.jpg" 
+            alt="Professional cleaning and facility services by Lexo Care" 
+            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 opacity-90"
+          />
+          <!-- Subtle Dark Gradient Overlay for dramatic contrast -->
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0B192C]/80 via-transparent to-transparent pointer-events-none"></div>
+          
+          <!-- Floating Badge tag -->
+          <div class="absolute bottom-4 left-4 bg-[#0B192C] text-white px-4 py-2 border border-white/20 shadow-lg z-30">
+            <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#00b4f0]">Professional Standards</p>
+            <p class="text-xs font-medium text-white">Trusted Facility & Home Care</p>
+          </div>
+        </div>
+      </div>
+      <!-- Left Hero Block (Solid Navy Statement Box) -->
+      <div class="lg:col-span-5 bg-[#0B192C] text-white p-5 sm:p-7 flex flex-col justify-between shadow-2xl relative overflow-hidden transform transition-all duration-500 hover:scale-[1.01]">
+        <!-- Decorative geometric corner accent -->
+        <div class="absolute -bottom-16 -right-16 w-40 h-40 bg-[#5A8AB3]/30 rounded-full blur-2xl"></div>
+        
         <div>
-          <div class="flex items-center gap-3 mb-6">
-            
+          <div class="lexo-care-logo-wrapper" role="img" aria-label="LEXO CARE Logo">
+            <div class="lexo-row">
+                <span class="lexo-cyan">LE</span>
+                <div class="lexo-x">
+                    <div class="lexo-bar-black"></div>
+                    <div class="lexo-bar-cyan"></div>
+                </div>
+                <span class="lexo-cyan">O</span>
+            </div>
+            <div class="care-row">
+                <span>C</span><span>A</span><span>R</span><span>E</span>
+            </div>
           </div>
 
-          <p class="text-base sm:text-lg lg:text-xl font-medium leading-relaxed text-gray-100 mb-8">
-          <div class="lexo-care-logo-wrapper" role="img" aria-label="LEXO CARE Logo">
+          <p class="text-sm sm:text-base lg:text-lg font-medium leading-relaxed text-gray-100 mb-6">
+                     <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   is a Qatar-based service provider operating out of Doha that delivers convenient, booking-based cleaning, disinfection, pest control, and hospitality solutions directly to residential and commercial clients.
+                    </p>
+
+                    <p class="text-xs sm:text-sm text-gray-300 leading-relaxed mb-8">
+                        By consolidating multiple facility requirements under one partner, it offers flexible individual or recurring scheduling, professional on-site staff, clear client communication, and tailored local operations to simplify property management.
+                    </p>
+
+          
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
+          <span class="text-[10px] tracking-widest uppercase text-gray-300 font-semibold">Excellence in Service</span>
+          <div class="flex gap-1.5">
+            <span class="w-2.5 h-2.5 bg-white"></span>
+            <span class="w-2.5 h-2.5 bg-[#5A8AB3] border border-white/30"></span>
+          </div>
+        </div>
+      </div>
+
+     
+
+    </div>
+
+  </div>
+</section>
+
+<!-- STYLES, ANIMATIONS & LOGO CONFIGURATION -->
+<style>
+@keyframes floatBubble {
+    0% { transform: translateY(0px) scale(1); opacity: 0.3; }
+    50% { transform: translateY(-30px) scale(1.1); opacity: 0.7; }
+    100% { transform: translateY(0px) scale(1); opacity: 0.3; }
+}
+
+.lexo-bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(0, 180, 240, 0.4), rgba(90, 138, 179, 0.15));
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: floatBubble 6s ease-in-out infinite;
+}
+
+.lexo-bubble-1 { width: 80px; height: 80px; top: 10%; left: 10%; animation-duration: 7s; }
+.lexo-bubble-2 { width: 120px; height: 120px; top: 60%; right: 10%; animation-duration: 9s; animation-delay: 1s; }
+.lexo-bubble-3 { width: 60px; height: 60px; bottom: 15%; left: 20%; animation-duration: 5s; animation-delay: 2s; }
+.lexo-bubble-4 { width: 100px; height: 100px; top: 20%; right: 25%; animation-duration: 8s; animation-delay: 1.5s; }
+
+.lexo-care-logo-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.lexo-care-logo-wrapper .lexo-row {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.lexo-care-logo-wrapper .lexo-cyan {
+    color: #00b4f0;
+}
+
+.lexo-care-logo-wrapper .lexo-x {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.9em;
+    height: 1em;
+    margin: 0 -0.02em;
+}
+
+.lexo-care-logo-wrapper .lexo-bar-black {
+    position: absolute;
+    width: 0.22em;
+    height: 1.15em;
+    background-color: white;
+    transform: rotate(-34deg);
+    border-radius: 2px;
+}
+
+.lexo-care-logo-wrapper .lexo-bar-cyan {
+    position: absolute;
+    width: 0.22em;
+    height: 1.15em;
+    background-color: #00b4f0;
+    transform: rotate(34deg);
+    border-radius: 2px;
+}
+
+.lexo-care-logo-wrapper .care-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.25em;
+    font-weight: 500;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    letter-spacing: 0.58em;
+    color: rgb(155, 154, 154);
+    padding-left: 0.1em;
+    font-size: 0.28em;
+}
+
+.lexo-care-logo-wrapper:hover .lexo-cyan {
+    filter: drop-shadow(0 2px 4px rgba(0, 180, 240, 0.4));
+}
+</style>
+<!-- LEXO CARE CLIENT EXPERIENCE / WORKFLOW SECTION (BAUHAUS STYLE BORDERS) -->
+<section id="client-experience" class="w-full bg-white text-[#0B192C] font-sans relative overflow-hidden py-10 lg:py-14">
+  
+  <!-- Bubble Background -->
+  <div class="lexo-bubble-bg">
+      <div class="liquid-bubble wb-1"></div>
+      <div class="liquid-bubble wb-2"></div>
+      <div class="liquid-bubble wb-3"></div>
+      <div class="liquid-bubble wb-4"></div>
+      <div class="liquid-bubble wb-5"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+    
+    <!-- Section Header -->
+    <div class="mb-12">
+      <div class="inline-flex items-center gap-2 mb-1">
+        <span class="w-8 h-1 bg-[#0B192C]"></span>
+        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#0B192C]">Seamless Workflow at</span>
+      </div>
+      <div class="lexo-care-logo-wrapper" role="img" aria-label="LEXO CARE Logo">
+        <div class="lexo-row">
+            <span class="lexo-cyan">LE</span>
+            <div class="lexo-x">
+                <div class="lexo-bar-black"></div>
+                <div class="lexo-bar-cyan"></div>
+            </div>
+            <span class="lexo-cyan">O</span>
+        </div>
+        <div class="care-row">
+            <span>C</span><span>A</span><span>R</span><span>E</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Workflow Cards Grid with Bauhaus Solid Borders & Connecting Arrows -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 items-stretch relative">
+      
+      <!-- STEP 01 -->
+      <div class="relative bg-white text-[#0B192C] p-5 border-2 border-[#0B192C] shadow-[4px_4px_0px_0px_#0B192C] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[6px_6px_0px_0px_#00b4f0] hover:border-[#00b4f0] group flex flex-col justify-between">
+        <!-- Connecting Arrow for Desktop -->
+        <div class="hidden lg:flex absolute -right-3.5 top-1/2 -translate-y-1/2 z-25 w-7 h-7 rounded-full bg-[#0B192C] border-2 border-white text-white items-center justify-center text-[10px] shadow-md group-hover:bg-[#00b4f0] transition-colors">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div>
+          <div class="flex items-center justify-between mb-3 text-[10px] font-mono font-bold text-slate-500">
+            <span>STEP 01</span>
+            <span class="w-2 h-2 rounded-full bg-[#0B192C] group-hover:bg-[#00b4f0] transition-colors"></span>
+          </div>
+          <h4 class="text-base font-black uppercase tracking-wide text-[#0B192C] mb-2 group-hover:text-[#00b4f0] transition-colors">Enquiry</h4>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            The client contacts LEXO with the required service.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-200 flex items-center text-[10px] text-[#0B192C] font-bold uppercase tracking-wider">
+            <span>Initial Phase</span>
+        </div>
+      </div>
+
+      <!-- STEP 02 -->
+      <div class="relative bg-white text-[#0B192C] p-5 border-2 border-[#0B192C] shadow-[4px_4px_0px_0px_#0B192C] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[6px_6px_0px_0px_#00b4f0] hover:border-[#00b4f0] group flex flex-col justify-between">
+        <div class="hidden lg:flex absolute -right-3.5 top-1/2 -translate-y-1/2 z-25 w-7 h-7 rounded-full bg-[#0B192C] border-2 border-white text-white items-center justify-center text-[10px] shadow-md group-hover:bg-[#00b4f0] transition-colors">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div>
+          <div class="flex items-center justify-between mb-3 text-[10px] font-mono font-bold text-slate-500">
+            <span>STEP 02</span>
+            <span class="w-2 h-2 rounded-full bg-[#0B192C] group-hover:bg-[#00b4f0] transition-colors"></span>
+          </div>
+          <h4 class="text-base font-black uppercase tracking-wide text-[#0B192C] mb-2 group-hover:text-[#00b4f0] transition-colors">Requirement</h4>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            We understand property, type, location, timing and specifications.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-200 flex items-center text-[10px] text-[#0B192C] font-bold uppercase tracking-wider">
+            <span>Analysis</span>
+        </div>
+      </div>
+
+      <!-- STEP 03 -->
+      <div class="relative bg-white text-[#0B192C] p-5 border-2 border-[#0B192C] shadow-[4px_4px_0px_0px_#0B192C] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[6px_6px_0px_0px_#00b4f0] hover:border-[#00b4f0] group flex flex-col justify-between">
+        <div class="hidden lg:flex absolute -right-3.5 top-1/2 -translate-y-1/2 z-25 w-7 h-7 rounded-full bg-[#0B192C] border-2 border-white text-white items-center justify-center text-[10px] shadow-md group-hover:bg-[#00b4f0] transition-colors">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div>
+          <div class="flex items-center justify-between mb-3 text-[10px] font-mono font-bold text-slate-500">
+            <span>STEP 03</span>
+            <span class="w-2 h-2 rounded-full bg-[#0B192C] group-hover:bg-[#00b4f0] transition-colors"></span>
+          </div>
+          <h4 class="text-base font-black uppercase tracking-wide text-[#0B192C] mb-2 group-hover:text-[#00b4f0] transition-colors">Booking</h4>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            The service is scheduled according to availability and agreed needs.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-200 flex items-center text-[10px] text-[#0B192C] font-bold uppercase tracking-wider">
+            <span>Scheduling</span>
+        </div>
+      </div>
+
+      <!-- STEP 04 -->
+      <div class="relative bg-white text-[#0B192C] p-5 border-2 border-[#0B192C] shadow-[4px_4px_0px_0px_#0B192C] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[6px_6px_0px_0px_#00b4f0] hover:border-[#00b4f0] group flex flex-col justify-between">
+        <div class="hidden lg:flex absolute -right-3.5 top-1/2 -translate-y-1/2 z-25 w-7 h-7 rounded-full bg-[#0B192C] border-2 border-white text-white items-center justify-center text-[10px] shadow-md group-hover:bg-[#00b4f0] transition-colors">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div>
+          <div class="flex items-center justify-between mb-3 text-[10px] font-mono font-bold text-slate-500">
+            <span>STEP 04</span>
+            <span class="w-2 h-2 rounded-full bg-[#0B192C] group-hover:bg-[#00b4f0] transition-colors"></span>
+          </div>
+          <h4 class="text-base font-black uppercase tracking-wide text-[#0B192C] mb-2 group-hover:text-[#00b4f0] transition-colors">Deployment</h4>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            The appropriate service team is arranged and deployed to location.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-200 flex items-center text-[10px] text-[#0B192C] font-bold uppercase tracking-wider">
+            <span>Dispatch</span>
+        </div>
+      </div>
+
+      <!-- STEP 05 -->
+      <div class="relative bg-white text-[#0B192C] p-5 border-2 border-[#0B192C] shadow-[4px_4px_0px_0px_#0B192C] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[6px_6px_0px_0px_#00b4f0] hover:border-[#00b4f0] group flex flex-col justify-between">
+        <div class="hidden lg:flex absolute -right-3.5 top-1/2 -translate-y-1/2 z-25 w-7 h-7 rounded-full bg-[#0B192C] border-2 border-white text-white items-center justify-center text-[10px] shadow-md group-hover:bg-[#00b4f0] transition-colors">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div>
+          <div class="flex items-center justify-between mb-3 text-[10px] font-mono font-bold text-slate-500">
+            <span>STEP 05</span>
+            <span class="w-2 h-2 rounded-full bg-[#0B192C] group-hover:bg-[#00b4f0] transition-colors"></span>
+          </div>
+          <h4 class="text-base font-black uppercase tracking-wide text-[#0B192C] mb-2 group-hover:text-[#00b4f0] transition-colors">Delivery</h4>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            The team performs the agreed scope professionally and responsibly.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-200 flex items-center text-[10px] text-[#0B192C] font-bold uppercase tracking-wider">
+            <span>Execution</span>
+        </div>
+      </div>
+
+      <!-- STEP 06 -->
+      <div class="relative bg-white text-[#0B192C] p-5 border-2 border-[#0B192C] shadow-[4px_4px_0px_0px_#0B192C] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[6px_6px_0px_0px_emerald] hover:border-emerald-600 group flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3 text-[10px] font-mono font-bold text-slate-500">
+            <span>STEP 06</span>
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          </div>
+          <h4 class="text-base font-black uppercase tracking-wide text-[#0B192C] mb-2 group-hover:text-emerald-600 transition-colors">Feedback</h4>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            Client feedback helps us understand experience and improve.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-200 flex items-center text-[10px] text-emerald-600 font-bold uppercase tracking-wider">
+            <span>Completion ✓</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- STYLES FOR ANIMATED BUBBLES & SHADOWS -->
+<style>
+@keyframes floatBubble {
+    0% { transform: translateY(0px) scale(1); opacity: 0.3; }
+    50% { transform: translateY(-25px) scale(1.1); opacity: 0.6; }
+    100% { transform: translateY(0px) scale(1); opacity: 0.3; }
+}
+
+.lexo-bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(0, 180, 240, 0.4), rgba(36, 50, 71, 0.1));
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.5);
+    animation: floatBubble 6s ease-in-out infinite;
+}
+
+.lexo-bubble-1 { width: 70px; height: 70px; top: 10%; left: 8%; animation-duration: 6s; }
+.lexo-bubble-2 { width: 100px; height: 100px; top: 50%; right: 5%; animation-duration: 8s; animation-delay: 1s; }
+.lexo-bubble-3 { width: 50px; height: 50px; bottom: 10%; left: 15%; animation-duration: 5s; animation-delay: 2s; }
+.lexo-bubble-4 { width: 90px; height: 90px; top: 15%; right: 20%; animation-duration: 7s; animation-delay: 1.5s; }
+.lexo-bubble-5 { width: 60px; height: 60px; bottom: 30%; right: 30%; animation-duration: 6.5s; animation-delay: 0.5s; }
+.lexo-bubble-6 { width: 80px; height: 80px; top: 40%; left: 3%; animation-duration: 9s; animation-delay: 2.5s; }
+
+.lexo-card-shadow {
+    box-shadow: 0 10px 25px -5px rgba(36, 50, 71, 0.08), 0 0 10px rgba(0, 180, 240, 0.04);
+}
+</style>
+<!-- LEXO CARE BRAND PROMISE & FOOTER SECTION - SINGLE SCREEN, DEEP NAVY BG, ANIMATED BUBBLES -->
+<section id="brand-promise" class="max-h-[620px] w-full bg-[#0B192C] text-white font-sans relative overflow-hidden flex items-center justify-center py-4">
+  
+  <!-- Animated Background Water Bubbles Container -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="lexo-bubble lexo-bubble-1"></div>
+    <div class="lexo-bubble lexo-bubble-2"></div>
+    <div class="lexo-bubble lexo-bubble-3"></div>
+    <div class="lexo-bubble lexo-bubble-4"></div>
+    <div class="lexo-bubble lexo-bubble-5"></div>
+    <div class="lexo-bubble lexo-bubble-6"></div>
+  </div>
+
+  <!-- Sleek Bauhaus Background Grid Lines & Accents -->
+  <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff06_1px,transparent_1px),linear-gradient(to_bottom,#ffffff06_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none z-0"></div>
+  <div class="absolute top-0 right-0 w-80 h-80 bg-[#00b4f0]/10 rounded-bl-full pointer-events-none z-0 blur-xl"></div>
+  <div class="absolute bottom-0 left-0 w-64 h-64 border-2 border-white/5 rounded-tr-full pointer-events-none z-0"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-between h-full py-6">
+    
+    <!-- Top Row: Brand Promise & Social Links -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start mt-4">
+      
+      <!-- Left Content -->
+      <div class="lg:col-span-8">
+        <div class="inline-flex items-center  text-white text-[10px] font-bold uppercase tracking-widest mb-3">
+          <span><div class="lexo-care-logo-wrapper" role="img" aria-label="LEXO CARE Logo">
 
             <div class="lexo-row">
 
@@ -2432,7 +2966,7 @@ a {
 
     height: 1.15em;
 
-    background-color: white;
+    background-color: gray !important;
 
     transform: rotate(-34deg);
 
@@ -2480,7 +3014,7 @@ a {
 
     letter-spacing: 0.58em;
 
-    color: #ffffff;
+    color: gray !important;
 
     padding-left: 0.1em;
 
@@ -2510,448 +3044,10 @@ a {
 
     }
 
-</style><br> <br>  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;is a Qatar-based service provider operating out of Doha that delivers convenient, booking-based cleaning, disinfection, pest control, and hospitality solutions directly to residential and commercial clients.
-          </p>
-
-          <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
-            By consolidating multiple facility requirements under one partner, it offers flexible individual or recurring scheduling, professional on-site staff, clear client communication, and tailored local operations to simplify property management.
-          </p>
-          <br>
-
-                <!-- Sleek Booking Button -->
-                <div>
-                    <a href="#contact-booking" onclick="toggleFullscreenMenu()" class="inline-flex items-center justify-center gap-3 px-7 py-3 rounded-full bg-[#00b4f0] hover:bg-white text-[#0b0c10] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 shadow-xl hover:-translate-y-0.5">
-                        <span>Book Your Slot</span>
-                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                    </a>
-                </div>
+</style> &nbsp; BRAND PROMISE</span>
         </div>
-
-      
-      </div>
-
-      <!-- Right Image Block (Bauhaus Frame Contrast) -->
-      <div class="lg:col-span-5 relative flex items-center">
-        <!-- Outer contrasting Bauhaus geometric frame accent -->
-        <div class="absolute -inset-2 bg-[#0B192C]/10 rounded-none shadow-xl transform rotate-1 scale-[1.01] pointer-events-none"></div>
-        <div class="absolute inset-0 border-4 border-[#0B192C] pointer-events-none z-20"></div>
-
-        <!-- Main Image Container -->
-        <div class="relative w-full h-full min-h-[420px] sm:min-h-[500px] bg-[#0B192C] overflow-hidden z-10 shadow-2xl flex items-center justify-center">
-          <img 
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop" 
-            alt="Lexo Qatar Facility & Property Management Services" 
-            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 opacity-90"
-          />
-          <!-- Subtle Dark Gradient Overlay -->
-          <div class="absolute inset-0 bg-gradient-to-t from-[#0B192C]/90 via-transparent to-transparent pointer-events-none"></div>
-          
-          <!-- Floating Badge tag -->
-          <div class="absolute bottom-6 left-6 bg-[#0B192C] text-white px-6 py-3 border-2 border-white/30 shadow-lg z-30">
-            <p class="text-xs font-bold tracking-[0.2em] uppercase text-[#00b4f0]">Doha Based</p>
-            <p class="text-sm font-medium text-white">Reliable Solutions</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-</section>
-<!-- LEXO CARE CLIENT EXPERIENCE SECTION - SINGLE SCREEN, CONNECTED STEPS, ANIMATED BUBBLES -->
-<section id="client-experience" class="max-h-[1640px] w-full bg-[#F1F7FC] text-[#243247] font-sans relative overflow-hidden flex items-center justify-center py-12">
-  
-  <!-- Animated Background Water Bubbles Container -->
-  <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-    <div class="lexo-bubble lexo-bubble-1"></div>
-    <div class="lexo-bubble lexo-bubble-2"></div>
-    <div class="lexo-bubble lexo-bubble-3"></div>
-    <div class="lexo-bubble lexo-bubble-4"></div>
-    <div class="lexo-bubble lexo-bubble-5"></div>
-    <div class="lexo-bubble lexo-bubble-6"></div>
-  </div>
-
-  <!-- Sleek Bauhaus Background Grid Lines & Accents -->
-  <div class="absolute inset-0 bg-[linear-gradient(to_right,#24324706_1px,transparent_1px),linear-gradient(to_bottom,#24324706_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none z-0"></div>
-  <div class="absolute top-0 right-0 w-80 h-80 bg-[#00b4f0]/10 rounded-bl-full pointer-events-none z-0 blur-xl"></div>
-  <div class="absolute bottom-0 left-0 w-64 h-64 border-2 border-[#243247]/5 rounded-tr-full pointer-events-none z-0"></div>
-<!-- Bottom-to-Top Water Bubbles Background -->
-<div class="lexo-bubble-bg">
-    <div class="liquid-bubble wb-1"></div>
-    <div class="liquid-bubble wb-2"></div>
-    <div class="liquid-bubble wb-3"></div>
-    <div class="liquid-bubble wb-4"></div>
-    <div class="liquid-bubble wb-5"></div>
-    <div class="liquid-bubble wb-6"></div>
-    <div class="liquid-bubble wb-7"></div>
-    <div class="liquid-bubble wb-8"></div>
-    <div class="liquid-bubble wb-9"></div>
-    <div class="liquid-bubble wb-10"></div>
-</div>
-  <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-center h-full">
-    
-  <div class="mb-10">
-     
-      <div class="inline-flex items-center gap-2 mb-1">
-        <span class="w-8 h-1 bg-[#243247]"></span>
-        <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#243247]">Seamless workflow at </span>
-      </div>
-       <div class="lexo-care-logo-wrapper" role="img" aria-label="LEXO CARE Logo">
-
-            <div class="lexo-row">
-
-                <span class="lexo-cyan">L</span>
-
-               <span class="lexo-cyan">E</span>
-
-                <div class="lexo-x">
-
-                    <div class="lexo-bar-black"></div>
-
-                    <div class="lexo-bar-cyan"></div>
-
-                </div>
-
-                <span class="lexo-cyan">O</span>
-
-            </div>
-
-            <div class="care-row">
-
-                <span>C</span><span>A</span><span>R</span><span>E</span>
-
-            </div>
-
-          </div>
-
-
-
-<style>
-
-.lexo-care-logo-wrapper {
-
-    display: inline-flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    user-select: none;
-
-    font-size: 2rem; /* Adjust this font-size to scale the entire logo easily */
-
-    line-height: 1;
-
-}
-
-
-
-.lexo-care-logo-wrapper .lexo-row {
-
-    display: flex;
-
-    align-items: center;
-
-    font-weight: 900;
-
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-
-    letter-spacing: -0.02em;
-
-}
-
-
-
-.lexo-care-logo-wrapper .lexo-cyan {
-
-    color: #00b4f0;
-
-}
-
-
-
-/* Intersecting X container */
-
-.lexo-care-logo-wrapper .lexo-x {
-
-    position: relative;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    width: 0.9em;
-
-    height: 1em;
-
-    margin: 0 -0.02em;
-
-}
-
-
-
-/* Diagonal bar of the X (changed to white for dark navy background contrast) */
-
-.lexo-care-logo-wrapper .lexo-bar-black {
-
-    position: absolute;
-
-    width: 0.22em;
-
-    height: 1.15em;
-
-    background-color: gray!important;
-
-    transform: rotate(-34deg);
-
-    border-radius: 2px;
-
-}
-
-
-
-/* Cyan diagonal bar of the X */
-
-.lexo-care-logo-wrapper .lexo-bar-cyan {
-
-    position: absolute;
-
-    width: 0.22em;
-
-    height: 1.15em;
-
-    background-color: #00b4f0;
-
-    transform: rotate(34deg);
-
-    border-radius: 2px;
-
-}
-
-
-
-/* CARE subtitle row (changed to white so it shows clearly on navy background) */
-
-.lexo-care-logo-wrapper .care-row {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    width: 100%;
-
-    margin-top: 0.25em;
-
-    font-weight: 500;
-
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-
-    letter-spacing: 0.58em;
-
-    color:gray!important;
-
-    padding-left: 0.1em;
-
-    font-size: 0.28em;
-
-}
-
-
-
-/* Optional hover polish */
-
-.lexo-care-logo-wrapper:hover .lexo-cyan {
-
-    filter: drop-shadow(0 2px 4px rgba(0, 180, 240, 0.4));
-
-}
-
-    .lexo-services-container {
-
-        font-family: 'Plus Jakarta Sans', sans-serif;
-
-    }
-
-    .lexo-card-shadow {
-
-        box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.12), 0 0 20px rgba(30, 58, 138, 0.04);
-
-    }
-
-</style>
-    </div>
-
-    <!-- Connected Steps Grid (Horizontal Flow with Arrows on Desktop, 2x3 on Tablet, 1x6 on Mobile) -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-2.5 sm:gap-3 items-stretch relative">
-      
-      <!-- STEP 01 -->
-      <div class="lexo-card-shadow flex flex-col justify-between p-3 rounded-xl bg-white border border-slate-200/80 relative group hover:border-[#00b4f0] transition-all duration-300">
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-[#00b4f0] font-bold text-xs hidden lg:inline">→</span>
-          </div>
-          <h4 class="text-xs sm:text-sm font-bold text-[#243247] mb-1 group-hover:text-[#00b4f0] transition-colors">Enquiry</h4>
-          <p class="text-[10px] sm:text-[11px] text-slate-600 leading-relaxed">
-            The client contacts LEXO with the required service.
-          </p>
-        </div>
-        <div class="mt-2 pt-1.5 border-t border-slate-100 flex items-center justify-between text-[9px] text-slate-400 font-mono">
-          <span>STEP 1</span>
-          <span class="w-1.5 h-1.5 rounded-full bg-[#00b4f0]"></span>
-        </div>
-      </div>
-
-      <!-- STEP 02 -->
-      <div class="lexo-card-shadow flex flex-col justify-between p-3 rounded-xl bg-white border border-slate-200/80 relative group hover:border-[#00b4f0] transition-all duration-300">
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-[#00b4f0] font-bold text-xs hidden lg:inline">→</span>
-          </div>
-          <h4 class="text-xs sm:text-sm font-bold text-[#243247] mb-1 group-hover:text-[#00b4f0] transition-colors">Requirement</h4>
-          <p class="text-[10px] sm:text-[11px] text-slate-600 leading-relaxed">
-            We understand property, type, location, timing and specifications.
-          </p>
-        </div>
-        <div class="mt-2 pt-1.5 border-t border-slate-100 flex items-center justify-between text-[9px] text-slate-400 font-mono">
-          <span>STEP 2</span>
-          <span class="w-1.5 h-1.5 rounded-full bg-[#00b4f0]"></span>
-        </div>
-      </div>
-
-      <!-- STEP 03 -->
-      <div class="lexo-card-shadow flex flex-col justify-between p-3 rounded-xl bg-white border border-slate-200/80 relative group hover:border-[#00b4f0] transition-all duration-300">
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-[#00b4f0] font-bold text-xs hidden lg:inline">→</span>
-          </div>
-          <h4 class="text-xs sm:text-sm font-bold text-[#243247] mb-1 group-hover:text-[#00b4f0] transition-colors">Booking</h4>
-          <p class="text-[10px] sm:text-[11px] text-slate-600 leading-relaxed">
-            The service is scheduled according to availability and agreed needs.
-          </p>
-        </div>
-        <div class="mt-2 pt-1.5 border-t border-slate-100 flex items-center justify-between text-[9px] text-slate-400 font-mono">
-          <span>STEP 3</span>
-          <span class="w-1.5 h-1.5 rounded-full bg-[#00b4f0]"></span>
-        </div>
-      </div>
-
-      <!-- STEP 04 -->
-      <div class="lexo-card-shadow flex flex-col justify-between p-3 rounded-xl bg-white border border-slate-200/80 relative group hover:border-[#00b4f0] transition-all duration-300">
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-[#00b4f0] font-bold text-xs hidden lg:inline">→</span>
-          </div>
-          <h4 class="text-xs sm:text-sm font-bold text-[#243247] mb-1 group-hover:text-[#00b4f0] transition-colors">Deployment</h4>
-          <p class="text-[10px] sm:text-[11px] text-slate-600 leading-relaxed">
-            The appropriate service team is arranged and deployed to location.
-          </p>
-        </div>
-        <div class="mt-2 pt-1.5 border-t border-slate-100 flex items-center justify-between text-[9px] text-slate-400 font-mono">
-          <span>STEP 4</span>
-          <span class="w-1.5 h-1.5 rounded-full bg-[#00b4f0]"></span>
-        </div>
-      </div>
-
-      <!-- STEP 05 -->
-      <div class="lexo-card-shadow flex flex-col justify-between p-3 rounded-xl bg-white border border-slate-200/80 relative group hover:border-[#00b4f0] transition-all duration-300">
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-[#00b4f0] font-bold text-xs hidden lg:inline">→</span>
-          </div>
-          <h4 class="text-xs sm:text-sm font-bold text-[#243247] mb-1 group-hover:text-[#00b4f0] transition-colors">Service Delivery</h4>
-          <p class="text-[10px] sm:text-[11px] text-slate-600 leading-relaxed">
-            The team performs the agreed scope professionally and responsibly.
-          </p>
-        </div>
-        <div class="mt-2 pt-1.5 border-t border-slate-100 flex items-center justify-between text-[9px] text-slate-400 font-mono">
-          <span>STEP 5</span>
-          <span class="w-1.5 h-1.5 rounded-full bg-[#00b4f0]"></span>
-        </div>
-      </div>
-
-      <!-- STEP 06 -->
-      <div class="lexo-card-shadow flex flex-col justify-between p-3 rounded-xl bg-white border border-slate-200/80 relative group hover:border-[#00b4f0] transition-all duration-300">
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-emerald-500 font-bold text-xs hidden lg:inline">✓</span>
-          </div>
-          <h4 class="text-xs sm:text-sm font-bold text-[#243247] mb-1 group-hover:text-[#00b4f0] transition-colors">Feedback</h4>
-          <p class="text-[10px] sm:text-[11px] text-slate-600 leading-relaxed">
-            Client feedback helps us understand experience and improve.
-          </p>
-        </div>
-        <div class="mt-2 pt-1.5 border-t border-slate-100 flex items-center justify-between text-[9px] text-slate-400 font-mono">
-          <span>STEP 6</span>
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- STYLES FOR ANIMATED BUBBLES & SHADOWS -->
-<style>
-@keyframes floatBubble {
-    0% { transform: translateY(0px) scale(1); opacity: 0.3; }
-    50% { transform: translateY(-25px) scale(1.1); opacity: 0.6; }
-    100% { transform: translateY(0px) scale(1); opacity: 0.3; }
-}
-
-.lexo-bubble {
-    position: absolute;
-    border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, rgba(0, 180, 240, 0.4), rgba(36, 50, 71, 0.1));
-    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.5);
-    animation: floatBubble 6s ease-in-out infinite;
-}
-
-.lexo-bubble-1 { width: 70px; height: 70px; top: 10%; left: 8%; animation-duration: 6s; }
-.lexo-bubble-2 { width: 100px; height: 100px; top: 50%; right: 5%; animation-duration: 8s; animation-delay: 1s; }
-.lexo-bubble-3 { width: 50px; height: 50px; bottom: 10%; left: 15%; animation-duration: 5s; animation-delay: 2s; }
-.lexo-bubble-4 { width: 90px; height: 90px; top: 15%; right: 20%; animation-duration: 7s; animation-delay: 1.5s; }
-.lexo-bubble-5 { width: 60px; height: 60px; bottom: 30%; right: 30%; animation-duration: 6.5s; animation-delay: 0.5s; }
-.lexo-bubble-6 { width: 80px; height: 80px; top: 40%; left: 3%; animation-duration: 9s; animation-delay: 2.5s; }
-
-.lexo-card-shadow {
-    box-shadow: 0 10px 25px -5px rgba(36, 50, 71, 0.08), 0 0 10px rgba(0, 180, 240, 0.04);
-}
-</style>
-<!-- LEXO CARE BRAND PROMISE & FOOTER SECTION - SINGLE SCREEN, DEEP NAVY BG, ANIMATED BUBBLES -->
-<section id="brand-promise" class="max-h-[620px] w-full bg-[#0B192C] text-white font-sans relative overflow-hidden flex items-center justify-center py-4">
-  
-  <!-- Animated Background Water Bubbles Container -->
-  <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
-    <div class="lexo-bubble lexo-bubble-1"></div>
-    <div class="lexo-bubble lexo-bubble-2"></div>
-    <div class="lexo-bubble lexo-bubble-3"></div>
-    <div class="lexo-bubble lexo-bubble-4"></div>
-    <div class="lexo-bubble lexo-bubble-5"></div>
-    <div class="lexo-bubble lexo-bubble-6"></div>
-  </div>
-
-  <!-- Sleek Bauhaus Background Grid Lines & Accents -->
-  <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff06_1px,transparent_1px),linear-gradient(to_bottom,#ffffff06_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none z-0"></div>
-  <div class="absolute top-0 right-0 w-80 h-80 bg-[#00b4f0]/10 rounded-bl-full pointer-events-none z-0 blur-xl"></div>
-  <div class="absolute bottom-0 left-0 w-64 h-64 border-2 border-white/5 rounded-tr-full pointer-events-none z-0"></div>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-between h-full py-6">
-    
-    <!-- Top Row: Brand Promise & Social Links -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start mt-4">
-      
-      <!-- Left Content -->
-      <div class="lg:col-span-8">
-        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#00b4f0]/15 border border-[#00b4f0]/30 text-[#00b4f0] text-[10px] font-bold uppercase tracking-widest mb-3">
-          <span>LEXO'S BRAND PROMISE</span>
-        </div>
-        <p class="text-lg sm:text-lg lg:text-lg font-black text-white mb-3 uppercase leading-tight">
-          We show up prepared, work professionally and treat every location with care.
-        </p>
+        <p class="text-gray-300 text-lg text-bold sm:text-sm max-w-2xl leading-relaxed">
+We show up prepared, work professionally and treat every location with care.        </p>
         <p class="text-gray-300 text-xs sm:text-sm max-w-2xl leading-relaxed">
           We understand that clients are trusting us with their homes, workplaces, businesses and operations. That trust is something we intend to earn through every booking.
         </p>
@@ -2959,18 +3055,18 @@ a {
 
       <!-- Right Social Links -->
       <div class="lg:col-span-4 flex flex-col lg:items-end justify-start">
-        <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#00b4f0] mb-3">Connect With Us</span>
+        <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-white mb-3">Connect With Us</span>
         <div class="flex items-center gap-2.5">
-          <a href="#" class="w-10 h-10 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#00b4f0] hover:border-[#00b4f0] hover:text-[#243247] transition-all duration-300">
+          <a href="#" class="w-10 h-10 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#00b4f0] hover:border-[#00b4f0] hover:text-[#0B192C] transition-all duration-300">
             <i class="fa-brands fa-linkedin-in text-sm"></i>
           </a>
-          <a href="#" class="w-10 h-10 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#00b4f0] hover:border-[#00b4f0] hover:text-[#243247] transition-all duration-300">
+          <a href="#" class="w-10 h-10 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#00b4f0] hover:border-[#00b4f0] hover:text-[#0B192C] transition-all duration-300">
             <i class="fa-brands fa-instagram text-sm"></i>
           </a>
-          <a href="#" class="w-10 h-10 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#00b4f0] hover:border-[#00b4f0] hover:text-[#243247] transition-all duration-300">
+          <a href="#" class="w-10 h-10 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#00b4f0] hover:border-[#00b4f0] hover:text-[#0B192C] transition-all duration-300">
             <i class="fa-brands fa-facebook-f text-sm"></i>
           </a>
-          <a href="#" class="w-10 h-10 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#00b4f0] hover:border-[#00b4f0] hover:text-[#243247] transition-all duration-300">
+          <a href="#" class="w-10 h-10 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-[#00b4f0] hover:border-[#00b4f0] hover:text-[#0B192C] transition-all duration-300">
             <i class="fa-brands fa-whatsapp text-sm"></i>
           </a>
         </div>
@@ -3004,66 +3100,39 @@ a {
 .lexo-bubble-5 { width: 60px; height: 60px; bottom: 30%; right: 30%; animation-duration: 6.5s; animation-delay: 0.5s; }
 .lexo-bubble-6 { width: 80px; height: 80px; top: 40%; left: 3%; animation-duration: 9s; animation-delay: 2.5s; }
 </style>
-<script>
-  function toggleFullscreenMenu() {
-    const menu = document.getElementById('fullscreen-menu');
-    if (menu.classList.contains('opacity-0')) {
-        menu.classList.remove('opacity-0', 'pointer-events-none');
-        menu.classList.add('opacity-100', 'pointer-events-auto');
-    } else {
-        menu.classList.remove('opacity-100', 'pointer-events-auto');
-        menu.classList.add('opacity-0', 'pointer-events-none');
-    }
-}
-    function openLexoModal(serviceName) {
-        const modal = document.getElementById('lexoModal');
-        const modalContent = document.getElementById('lexoModalContent');
-        const modalTitle = document.getElementById('lexoModalTitle');
-        const serviceInput = document.getElementById('lexoServiceInput');
+ <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggleBtn = document.getElementById('menu-toggle-btn');
+            const closeMenuBtn = document.getElementById('close-menu-btn');
+            const fullscreenMenu = document.getElementById('fullscreen-menu');
+            const menuNavLinks = document.querySelectorAll('.menu-nav-link');
 
-        modalTitle.textContent = `Inquire: ${serviceName}`;
-        serviceInput.value = serviceName;
+            function toggleFullscreenMenu() {
+                if (fullscreenMenu.classList.contains('opacity-0')) {
+                    fullscreenMenu.classList.remove('opacity-0', 'pointer-events-none');
+                    fullscreenMenu.classList.add('opacity-100', 'pointer-events-auto');
+                } else {
+                    fullscreenMenu.classList.remove('opacity-100', 'pointer-events-auto');
+                    fullscreenMenu.classList.add('opacity-0', 'pointer-events-none');
+                }
+            }
 
-        modal.classList.remove('hidden');
-        setTimeout(() => {
-            modal.classList.remove('opacity-0');
-            modalContent.classList.remove('scale-95');
-            modalContent.classList.add('scale-100');
-        }, 10);
-    }
+            if (menuToggleBtn) {
+                menuToggleBtn.addEventListener('click', toggleFullscreenMenu);
+            }
+            if (closeMenuBtn) {
+                closeMenuBtn.addEventListener('click', toggleFullscreenMenu);
+            }
 
-    function closeLexoModal() {
-        const modal = document.getElementById('lexoModal');
-        const modalContent = document.getElementById('lexoModalContent');
-
-        modal.classList.add('opacity-0');
-        modalContent.classList.remove('scale-100');
-        modalContent.classList.add('scale-95');
-
-        setTimeout(() => {
-            modal.classList.add('hidden');
-        }, 300);
-    }
-
-    function handleLexoSubmit(event) {
-        event.preventDefault();
-        closeLexoModal();
-
-        const toast = document.getElementById('lexoToast');
-        toast.classList.remove('translate-y-32', 'opacity-0');
-
-        setTimeout(() => {
-            toast.classList.add('translate-y-32', 'opacity-0');
-        }, 4000);
-    }
-
-    window.addEventListener('click', function(event) {
-        const modal = document.getElementById('lexoModal');
-        if (event.target === modal) {
-            closeLexoModal();
-        }
-    });
-</script>
+            // Close menu automatically when clicking any menu link
+            menuNavLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    fullscreenMenu.classList.remove('opacity-100', 'pointer-events-auto');
+                    fullscreenMenu.classList.add('opacity-0', 'pointer-events-none');
+                });
+            });
+        });
+    </script>
  
 </body>
 </html>
